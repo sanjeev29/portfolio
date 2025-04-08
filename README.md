@@ -1,4 +1,4 @@
 ## My Portfolio
-Built with Astro.
+Built with Astro & Tailwind CSS ❤️.
 
-Shout out to (https://zaggonaut.dev) for the template!
+Shout out to [Zaggonaut](https://zaggonaut.dev) for the template!
