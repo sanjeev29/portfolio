@@ -1,0 +1,36 @@
+---
+import { GLOBAL } from "../../lib/variables";
+---
+
+<div class="flex flex-col h-full justify-center items-center gap-16">
+    <h3 class="font-display text-lg sm:text-xl leading-loose text-center">
+        Work Experience
+    </h3>
+
+    <div>
+        {
+            GLOBAL.experiences.map((item) => (
+                <div class="relative flex gap-8">
+                    {/* First Column: Timeline */}
+                    <div class="flex flex-col items-center">
+                        {/* Circle */}
+                        <div class="flex w-4 h-4 rounded-full border-2 border-zag-light-muted dark:border-zag-dark-muted" />
+                        {/* Vertical Line */}
+                        <div class="h-full w-0.5 bg-zag-light-muted dark:bg-zag-dark-muted opacity-80" />
+                    </div>
+
+                    {/* Second Column: Content */}
+                    <div class="pb-8 flex flex-col gap-4">
+                        <div>
+                            <h2 class="font-bold text-lg">{item.heading}</h2>
+                            <h3 class="text-md">{item.role}</h3>
+                            <h4 class="text-sm text-gray-500">{item.period}</h4>
+                        </div>
+
+                        <p class="text-sm">{item.description}</p>
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+</div>
