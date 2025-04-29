@@ -8,13 +8,15 @@ export const GLOBAL = {
   email: "sanjeevraichur29@outlook.com",
   rootUrl: "https://zaggonaut.dev",
   shortDescription:
-    "Graduate CS @ Michigan Tech. Software engineer. Backend dev. Tech enthusiast.",
-  longDescription: `I'm a graduate student in computer science student at Michigan Technological University.
-    I have 3+ years of experience as a software engineer, during which I worked with fast-paced startups
-    to build scalable backend systems from concept to deployment. I have strong expertise in API design
-    and development, database design and DevOps practices.`,
+    "CS Graduate. Full-Stack Engineer. UI Builder. Tech Enthusiast.",
+  longDescription: `I'm a recent computer science graduate from Michigan Technological University with over 3
+  years of experience as a software engineer. I've worked at fast-paced startups, building scalable backend systems
+  and intuitive user interfaces from concept to deployment. I specialize in API design, database architecture,
+  DevOps practices, and modern UI development.`,
   location: "📍 Herndon, VA",
   workStatus: "💻 Open to work",
+  workStatusDescription: `Open to full-time software engineering roles starting June 2025 — backend, full-stack,
+  or developer tools.`,
 
   // Skills
   skills: [
@@ -165,6 +167,14 @@ export const GLOBAL = {
       description: `A network security tool designed to detect and manage malicious IP addresses. It embeds 10k IP
       addresses in a Random Bloom Filter (RBF) for efficient querying and uses a custom SHA-256 hash for secure indexing.`,
       githubLink: "https://github.com/sanjeev29/malicious-packet-checking",
+    },
+    {
+      id: "openostools03",
+      name: "OpenOS",
+      technologies: ["Next.js", "TypeScript", "Prisma", "tRPC"],
+      description: `An AI-powered platform built to simplify data and financial analysis, enabling users to write
+      queries, create reports, and make forecasts by providing a natural language interface.`,
+      productHuntLink: "https://www.producthunt.com/products/openos",
     },
   ],
 
