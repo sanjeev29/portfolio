@@ -20,14 +20,30 @@ import { GLOBAL } from "../../lib/variables";
                     </div>
 
                     {/* Second Column: Content */}
-                    <div class="pb-8 flex flex-col gap-4">
+                    <div class="pb-8">
                         <div>
-                            <h2 class="font-bold text-lg">{item.heading}</h2>
-                            <h3 class="text-md">{item.role}</h3>
-                            <h4 class="text-sm text-gray-500">{item.period}</h4>
+                            <a
+                                class="font-bold text-lg underline underline-offset-4"
+                                href={item.link}
+                                target="_blank"
+                            >
+                                {item.heading}
+                            </a>
+                            {item.roles.map((role) => (
+                                <div class="py-1 flex flex-col gap-2">
+                                    <div>
+                                        <h3 class="text-md">{role.name}</h3>
+                                        <h4 class="text-sm text-gray-500">
+                                            {role.period}
+                                        </h4>
+                                    </div>
+                                    <p
+                                        class="text-md"
+                                        set:html={role.description}
+                                    />
+                                </div>
+                            ))}
                         </div>
-
-                        <p class="text-sm">{item.description}</p>
                     </div>
                 </div>
             ))
