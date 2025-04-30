@@ -192,14 +192,14 @@ export const GLOBAL = {
             {
               id: "zoosofkarnataka01",
               name: "ZAK",
-              link: "https://example.com/project1",
+              link: "https://codemonk.io/work/zak-app-a-digital-lifeline-for-wildlife-conservation-during-covid-19",
               description: `Built and deployed REST APIs on AWS for the Zoos of Karnataka mobile app on a tight
               deadline, handling user auth with OTP, payments with Razorpay, and error tracking with Sentry.`,
             },
             {
               id: "zooticketing02",
               name: "Zoo Ticketing",
-              link: "",
+              link: "https://codemonk.io/work",
               description: `Built and launched an Electron.js desktop app to support zoo operations in areas with
               poor connectivity, with offline-first support using CouchDB for syncing data. Set up a CI/CD pipeline
               to automate updates and push new versions via AWS S3.`,
