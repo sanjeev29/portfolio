@@ -14,11 +14,12 @@ const { url, external, class: className } = Astro.props;
     class:list={[
         "zag-offset underline font-medium",
         "text-zag-dark dark:text-zag-light", // Default text color
-        "hover:text-zag-light-muted", // Hover color
+        "hover:text-red-400", // Hover color
         "transition-colors duration-200", // Smooth transition
         className,
     ]}
     target={external ? "_blank" : "_self"}
+    rel="noopener noreferrer"
     aria-label={Astro.props["aria-label"]}
 >
     <slot />

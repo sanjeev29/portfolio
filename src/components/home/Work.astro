@@ -21,28 +21,66 @@ import { GLOBAL } from "../../lib/variables";
 
                     {/* Second Column: Content */}
                     <div class="pb-8">
-                        <div>
-                            <a
-                                class="font-bold text-lg underline underline-offset-4"
-                                href={item.link}
-                                target="_blank"
-                            >
-                                {item.heading}
-                            </a>
-                            {item.roles.map((role) => (
-                                <div class="py-1 flex flex-col gap-2">
-                                    <div>
-                                        <h3 class="text-md">{role.name}</h3>
-                                        <h4 class="text-sm text-gray-500">
-                                            {role.period}
-                                        </h4>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <a
+                                    class="font-bold text-lg underline underline-offset-4 hover:text-red-400 transition-colors \
+                                duration-200"
+                                    href={item.link}
+                                    target="_blank"
+                                >
+                                    {item.heading}
+                                </a>
+                                <h4 class="text-md text-gray-500">
+                                    {item.period}
+                                </h4>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2">
+                                {item.technologies.map((tech) => (
+                                    <span
+                                        id={`${item.id}-${tech}`}
+                                        class="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-sm \
+                                                font-medium text-gray-800 dark:bg-gray-700 dark:text-gray-200"
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+
+                            <div>
+                                {item.roles.map((role) => (
+                                    <div class="py-2">
+                                        <h3 class="text-md font-medium text-gray-100">
+                                            {role.name}
+                                        </h3>
+                                        {role.description !== "" && (
+                                            <p class="text-md text-gray-300">
+                                                {role.description}
+                                            </p>
+                                        )}
+                                        {role.projects &&
+                                            role.projects.map((project) => (
+                                                <div class="py-1">
+                                                    <a
+                                                        class="font-medium text-md hover:text-red-400
+                                                        transition-colors duration-200"
+                                                        href={
+                                                            project.link ||
+                                                            item.link
+                                                        }
+                                                        target="_blank"
+                                                    >
+                                                        {project.name}
+                                                    </a>
+                                                    <span class="text-md">
+                                                        - {project.description}
+                                                    </span>
+                                                </div>
+                                            ))}
                                     </div>
-                                    <p
-                                        class="text-md"
-                                        set:html={role.description}
-                                    />
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

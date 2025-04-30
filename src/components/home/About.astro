@@ -3,6 +3,7 @@ import { GLOBAL } from "../../lib/variables";
 import Hero from "../../components/home/Hero.astro";
 
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 ---
 
 <div class="pt-8 flex flex-col justify-center items-center h-full gap-8">
@@ -18,14 +19,35 @@ import { Button } from "@/components/ui/button";
         </h3>
     </div>
 
-    <a href={`mailto:${GLOBAL.email}`} target="_blank">
-        <Button
-            className="rounded-full font-bold text-md px-8 py-5 bg-gray-200 hover:bg-white \
-text-black relative overflow-hidden transition-all duration-300 ease-out hover:scale-105 \
+    <div class="w-full flex gap-2 justify-between items-center">
+        <div>
+            <a href={`mailto:${GLOBAL.email}`}>
+                <Button
+                    className="rounded-full font-bold text-md px-8 py-5 bg-gray-200 hover:bg-white \
+text-black relative overflow-hidden transition-all duration-300 ease-out hover:scale-102 \
 hover:shadow-[0_0_15px_rgba(255,255,255,0.3)] focus:outline-none focus:ring-2 focus:ring-white \
 focus:ring-offset-2 focus:ring-offset-black active:scale-95 cursor-pointer"
-        >
-            Get in touch
-        </Button>
-    </a>
+                >
+                    Get in touch
+                </Button>
+            </a>
+        </div>
+
+        <div>
+            <a
+                class="flex items-center gap-0.5 px-3 py-1.5 text-md font-medium text-gray-700 \
+                hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors duration-200 group\
+                hover:underline hover:underline-offset-2"
+                href={GLOBAL.menu.projects}
+                rel="noopener noreferrer"
+            >
+                My recent work
+                <ArrowRight
+                    width={20}
+                    height={20}
+                    className="transition-transform duration-200 group-hover:translate-x-0.75"
+                />
+            </a>
+        </div>
+    </div>
 </div>
