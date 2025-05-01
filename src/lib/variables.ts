@@ -55,7 +55,7 @@ export const GLOBAL = {
       heading: "Michigan Technological University",
       link: "https://www.mtu.edu/",
       period: "May 2024 - Apr 2025",
-      technologies: ["C", "C++", "Linux", "Bash"],
+      technologies: ["C", "C++", "x86 Assembly", "Linux", "Bash"],
       roles: [
         {
           name: "Graduate Teaching Assistant | Programming Languages",
@@ -81,7 +81,7 @@ export const GLOBAL = {
       link: "https://www.lumikai.com/post/crater-club-closes-seed-round-of-1-2m-from-lumikai-and-others",
       technologies: [
         "Python",
-        "Django REST",
+        "Django REST Framework",
         "Django Channels",
         "PostgreSQL",
         "MongoDB",
@@ -109,7 +109,7 @@ export const GLOBAL = {
     {
       id: "thinklink03",
       heading: "ThinkLink",
-      period: "Oct 2020 - Feb 2022",
+      period: "Oct 2020 - Jan 2022",
       link: "https://www.linkedin.com/company/thinklinklife/about/",
       technologies: [
         "Python",
@@ -159,13 +159,11 @@ export const GLOBAL = {
         "Python",
         "JavaScript",
         "Django",
-        "Django REST",
+        "Django REST framework",
         "Flask",
         "PostgreSQL",
         "MongoDB",
         "Redis",
-        "Elasticsearch",
-        "RabbitMQ",
         "Vue.js",
         "Electron.js",
         "Docker",
