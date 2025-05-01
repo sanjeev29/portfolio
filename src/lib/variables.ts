@@ -1,13 +1,8 @@
-// Set any item to undefined to remove it from the site or to use the default value
-
-import { toNamespacedPath } from "node:path/win32";
-import { describe } from "node:test";
-
 export const GLOBAL = {
   // Site metadata
   username: "Sanjeev Raichur",
   email: "sanjeevraichur29@outlook.com",
-  rootUrl: "https://github.com/sanjeev29", // TODO: Change root URL to your own
+  rootUrl: "", // TODO: Change root URL to your own
   shortDescription: `Graduate CS @ MichiganTech. Software Engineer.`,
   longDescription: `I'm a recent computer science graduate from Michigan Technological University with over 3
   years of experience as a software engineer. I've worked at fast-paced startups, building scalable backend systems
@@ -22,7 +17,7 @@ export const GLOBAL = {
   skills: [
     {
       title: "Programming Languages",
-      list: ["Python", "Go", "JavaScript", "TypeScript", "SQL"],
+      list: ["Python", "Go", "JavaScript", "TypeScript", "C/C++", "SQL"],
     },
     {
       title: "Backend Technologies",
@@ -38,15 +33,11 @@ export const GLOBAL = {
     },
     {
       title: "DevOps & Infrastructure",
-      list: ["Git", "Docker", "Nginx", "Linux", "Bash"],
+      list: ["Git", "Docker", "Nginx", "Linux", "Bash", "CI/CD", "Redis"],
     },
     {
-      title: "Cloud Platforms",
-      list: ["AWS", "Vercel"],
-    },
-    {
-      title: "Other Tools & Services",
-      list: ["Celery", "Redis", "RabbitMQ", "Sentry", "BugSnag", "New Relic"],
+      title: "Cloud & Monitoring",
+      list: ["AWS", "Vercel", "Sentry", "BugSnag", "New Relic"],
     },
   ],
 
